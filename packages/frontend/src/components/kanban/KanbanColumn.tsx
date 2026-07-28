@@ -189,7 +189,7 @@ export function KanbanColumn({
           </form>
         ) : (
           <h3 className="flex min-w-0 items-center gap-2 font-semibold">
-            <PageIcon icon={column.icon} fallback="column" className="size-5 shrink-0" />
+            <PageIcon icon={column.icon} fallback="column" className="shrink-0" />
             <span className="min-w-0 truncate">{column.title}</span>
           </h3>
         )}

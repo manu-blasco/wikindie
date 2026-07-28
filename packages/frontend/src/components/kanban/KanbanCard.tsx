@@ -142,7 +142,7 @@ export function KanbanCard({
                                 type="button"
                               >
                                 <span className="flex min-w-0 items-center gap-2">
-                                  <PageIcon icon={column.icon} fallback="column" className="size-5 shrink-0" />
+                                  <PageIcon icon={column.icon} fallback="column" className="shrink-0" />
                                   <span className="min-w-0 truncate">{column.title}</span>
                                 </span>
                                 {targetIndex === columnIndex && <Check size={13} className="shrink-0 text-accent" />}
