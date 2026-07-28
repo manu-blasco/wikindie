@@ -624,7 +624,7 @@ function BoardColumnDistribution({
             <div key={`${column.title}-${index}`}>
               <div className="mb-1 flex items-center justify-between gap-2 text-xs">
                 <div className="flex min-w-0 items-center gap-1.5 font-medium text-text">
-                  <PageIcon icon={column.icon} fallback="column" className="size-3.5 shrink-0" />
+                  <PageIcon icon={column.icon} fallback="column" className="size-4 shrink-0" />
                   <span className="min-w-0 truncate">{column.title}</span>
                 </div>
                 <span className="shrink-0 text-text-muted">
@@ -739,7 +739,7 @@ function TaskPreview({ showAssignees, task }: { showAssignees: boolean; task: Ta
         <div className="min-w-0 flex-1">
           <p className="break-words text-sm text-text">{task.id ? `[${task.id}] ` : ''}{task.title}</p>
           <p className="mt-0.5 flex min-w-0 items-center gap-1 truncate text-xs text-text-muted">
-            <PageIcon icon={task.columnIcon} fallback="column" className="size-3 shrink-0" />
+            <PageIcon icon={task.columnIcon} fallback="column" className="size-4 shrink-0" />
             <span className="min-w-0 truncate">{task.columnTitle}</span>
           </p>
         </div>

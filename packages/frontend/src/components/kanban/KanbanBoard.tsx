@@ -614,7 +614,7 @@ function KanbanTableView({
               </td>
               <td className="px-3 py-2 align-middle text-text-muted">
                 <span className="inline-flex items-center gap-1.5">
-                  <PageIcon icon={column.icon} fallback="column" className="size-4" /> {column.title}
+                  <PageIcon icon={column.icon} fallback="column" className="size-5" /> {column.title}
                 </span>
               </td>
               <td className="px-3 py-2 align-middle">
