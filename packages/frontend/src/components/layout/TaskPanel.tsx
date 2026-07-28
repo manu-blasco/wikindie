@@ -624,7 +624,7 @@ function BoardColumnDistribution({
             <div key={`${column.title}-${index}`}>
               <div className="mb-1 flex items-center justify-between gap-2 text-xs">
                 <div className="flex min-w-0 items-center gap-1.5 font-medium text-text">
-                  <PageIcon icon={column.icon} fallback="column" className="shrink-0" />
+                  <PageIcon icon={column.icon} fallback="column" className="size-3.5 shrink-0" />
                   <span className="min-w-0 truncate">{column.title}</span>
                 </div>
                 <span className="shrink-0 text-text-muted">
@@ -679,7 +679,7 @@ function BoardOverview({
     <article className="rounded-md border border-border bg-surface p-2.5 shadow-sm shadow-shadow">
       <div className="mb-2.5 flex min-w-0 items-start justify-between gap-2">
         <div className="flex min-w-0 items-start gap-2">
-          <PageIcon icon={board.icon} fallback="board" className="mt-0.5 shrink-0" />
+          <PageIcon icon={board.icon} fallback="board" className="mt-0.5 size-5 shrink-0" />
           <div className="min-w-0">
             <h4 className="truncate text-sm font-semibold text-text">{board.title}</h4>
             <p className="truncate text-xs text-text-muted">{board.path}</p>
@@ -739,7 +739,7 @@ function TaskPreview({ showAssignees, task }: { showAssignees: boolean; task: Ta
         <div className="min-w-0 flex-1">
           <p className="break-words text-sm text-text">{task.id ? `[${task.id}] ` : ''}{task.title}</p>
           <p className="mt-0.5 flex min-w-0 items-center gap-1 truncate text-xs text-text-muted">
-            <PageIcon icon={task.columnIcon} fallback="column" className="shrink-0" />
+            <PageIcon icon={task.columnIcon} fallback="column" className="size-3 shrink-0" />
             <span className="min-w-0 truncate">{task.columnTitle}</span>
           </p>
         </div>
@@ -765,7 +765,7 @@ function EmptyBoardsState({
   return (
     <div className="rounded-md border border-dashed border-border bg-surface/60 p-3">
       <div className="mb-2.5 flex items-start gap-2.5">
-        <PageIcon icon="board" fallback="board" className="text-3xl shrink-0" />
+        <PageIcon icon="board" fallback="board" className="size-8 shrink-0" />
         <div>
           <h3 className="text-base font-semibold text-text">No nested boards yet</h3>
           <p className="mt-1 text-sm text-text-muted">Create a board below this page and it will appear here as a progress summary.</p>
